@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATAFILTERS</title>
+    <style>
+        .data{
+            padding: 30px  40px;
+            width: 50%;
+            
+            /* padding: 20px; */
+            /* background-color: lightgrey; */
+            font-family: 'Times New Roman', Times, serif;
+           
+        }
+        .title {
+            font-weight: 250;
+        }
+        table {
+            width: 70%;
+            border: 1.5px solid grey;
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 12px;
+            border: 1px solid lightgrey;
+            text-align: center;
+        }
+        th{
+            color: white;
+            background-color: darkblue;
+        }
+
+        .search {
+            width: 70%;
+            border: 1px solid yellow;
+            font-size: 15px;
+            text-indent: 18px;
+            margin: 10px 0px;
+           
+            display: flex;
+            align-self: left;
+           
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="data">
+
+        <h1 class="title">SuperHeroes</h1>
+
+
+        <input type="text " placeholder="Enter superhero name" class="search"id="name" onkeyup="searchName(this.value)">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Planet</th>
+                    <th>Group</th>
+                </tr>
+            </thead>
+
+            <tbody id="data">
+                <!-- <tr>
+                    
+                    <td>1</td>
+                    <td>Thor</td>
+                    <td>1500</td>
+                    <td>Asgard</td>
+                    <td>Avengers</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <script src="datafilter.js"></script>
+</body>
+</html>
